@@ -1,0 +1,152 @@
+21. What is inheritance?
+Ans. Inheritance is the process of creating a new class which is based on an existing class.The new class can inherite the methods and functions of parent class.
+
+22.(B1)Which inheritance is not supported by Dart? 
+Ans.  Multiple inheritance is not supported by dart.
+
+22.(B2)Why?
+Ans. Because it can lead ambiguity ,complexity and conflicts.
+
+22.(B3)What is advantage of inheritance?
+Ans. inheritance Provides various advantages such as  reusability, saving time and effort, easy understandability and reliability.
+
+23.(B1)Difference between inheritance and encapsulation.
+Ans.              Inheritance                                        Encapsulation
+      1.Inheritance's prior facility is reuse               1.Encapsulation allows us to hide
+        member of parent class.                                implementation details .
+                                     
+      2.Hierarchical relationships between classes.         2.It provides controlled access to the data and 
+                                                               methods of an object.
+
+      3.knowing inheritance by using extend keyword.       3.Encapsulation is achieved by using access modeifiers                                
+                                                             like public,private,protected and internal keywords.
+                                                             
+23.(B2)Difference between inheritance and abstraction.
+Ans.             Inheritance                                          Abstraction   
+    1.Inheritance is the process of creating a subclass      1. Abstraction hides the internal implementation and 
+      based on parent class.                                    creates the structure what required for entity.
+
+    2.Inheritance is acquire by inherite child class of      2. abstraction is achieved by creating an abstract 
+      existing class.                                           class and defining the member variables,properties
+                                                                  and methods.
+    3.Using extend keyword we can  inherite classes.         3. Following abstract keyword to class, we can abstract 
+                                                                methods.
+24.Difference between inheritance and polymorphism. 
+Ans.             Inheritance                                           polymorphism
+
+    1.Inheritance is one in which a derived class            1. Polymorphism is one you can define in 
+       inherits the existing class's features.                   various forms.
+
+    2.It refers to using structures and behaviours           2. It refers to changing the behaviour of
+     of a parent class in a child class.                        a parent class in the child class.
+
+    3. It is applied to classes.                             3. It is applied to functions and methods.
+
+    4. It can be single,hybrid,mixin,multilevel and          4. There are 2 types of polymorphism 
+    Hierarchical inheritance.                                    Compile time and run time.
+
+    5.It supports Code reusability and reduces line          5.It allows the object to decide which form of 
+    of codes.                                                  the function to be invoked in runtime(overrideing)
+                                                               and compile time(overloading).
+
+25.Can we override static method in Dart?
+Ans.No, we can not override static method in dart.
+
+26.Can we overload static method in Dart?
+Ans. No,dart doesnot have overload method.
+
+27. Can a class implement more than one interface?
+Ans. Yes,a class can implement more than one interface.
+
+(B1)Can a class extend more than one class in Dart?
+Ans. Yes, a class can extend more than one class in dart.
+
+28.Can an interface extend more than one interface in Dart?
+Ans. Yes, an interface can extend more than one interface in dart.
+
+29. What will happen if a class implements two interfaces and they both have a method with same name and signature?
+Ans. If a class implements two interfaces and they both have a method with same name and signature, then the implementing class can implement both interface methods with a  single concrete method which is polymorphism.
+
+30. Can we pass an object of a subclass to a method expecting an object of the super class?
+Ans. Yes, we can pass an object a subclass to a method expecting an object of the super class.
+
+(B1). Are static members inherited to sub classes?
+Ans. No, static members are not interited to sub classes.
+
+31.What happens if the parent and the child class have a field with same identifier?
+Ans. if parent and child class have a same field with indetifier child class's field hides parent class's field.
+
+(B1). Are constructors and initializers also inherited to sub classes?
+Ans.  No, Constuctors and initializers are not inherited to sub classes.
+
+32. How do you restrict a member of a class from inheriting by its sub classes?
+Ans.  We can restrict a member of a class by private method.
+
+33. How do you implement multiple inheritance in Dart?
+Ans. well, Multiple inheritance does not supports dart but inplace of multiple inheritance we can use mixin to achieve similar effect.
+
+34. Can a class extend by itself in Dart?
+Ans. Dart supports single inheritance which means a class can extends from single parent.
+
+35.How do you override a private method in Dart?
+Ans.Decalaring public method in base class and private method in it by how we can override private method in dart.
+
+36. When to overload a method in Dart and when to override it?
+Ans.When two or more methods in same class have same method name but Differente parameters at that time method overloading.
+whereas, when two methods in same name and same parameters at that time method will be overriden.
+
+37.What the order is of extends and implements keyword on Dart class declaration? 
+Ans.The extends keyword is comes first before implements keyword in dart.
+
+38.How do you prevent overriding a Dart method without using the final modifier?
+Ans. We can achieve override annotation  along with a private indetifier by this we can prevent overriding without using final modeifier.
+
+39.What are the rules of method overriding in Dart?
+Ans.1. Method can be overriden only in the child class. not in the parent class.
+    2. A method declared final or static inside the parent class ,it can't be overriden if the declared by child class.
+    3. A method declared private inside the parent class, it can't be overriden.
+    4. A method declared abstract inside the parent class, it can't be overriden.
+    5. A Constuctors of the parent class can't be inherited , so they can't be overriden by the child class.
+
+40. Difference between method overriding and overloading in Dart.
+Ans.      Method overriding                      Method overloading
+    1.We declare the same method in          1.Overloading happens when multiple methods 
+      the subclass, which is previously        have the same name but different parameters 
+      defined in the superclass is             in a class.
+      known as the method overriding.
+    
+    2. dart supports method overriding.      2. dart does not supports method overloading.
+
+    3. It is run time polymorphism           3. It is compile time polymorphism.
+
+41. What happens when a class implements two interfaces and both declare field (variable) with same name?
+Ans. If class implements two interfaces and both declare field with same name ,it is not distinguishable.
+
+42. Can a subclass instance method override a superclass static method?
+Ans. A subclass instance can not override static method.
+
+43.Can a subclass static method hide superclass instance method?
+Ans. If subclass has a static method with same method and signature as a superclass instance method so, the subclass method can hide superclass intance method.
+
+44. Can a superclass access subclass member?
+Ans. as per the rules super class does not access subclass's member directly but using encapsulation th internal details of child class should be hidden from its superclass.
+
+45.Difference between object oriented and object based language. 
+Ans.       Object Oriented                             Object based
+  1.Object Oriented language supports all     1. Object based language doesnot supports OOPs like
+    features of OOPs.                             polymorphism and inheritance.
+
+  2.Object oriented language does not has an   2. object based language has in-built object like 
+     in-built object.                               java-script has a window object.
+
+  3. Object Oriented languages are java,C++,   3.Object Based languages are javascript ,VVB.net etc.
+      C# etc.
+
+
+
+
+
+
+ 
+
+ 
