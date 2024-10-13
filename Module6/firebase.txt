@@ -1,0 +1,46 @@
+firebase contains only 6 projects.
+install firebase CLI installation.
+STEPS TO install firebase
+1. dart pub global activate flutterfire_cli
+
+2.npm install -g firebase-tools
+
+--> after paste this second step we will get error in terminal so after that in the laptop search
+"POWERSHEL as Administrator.
+
+3.Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+--> paste this 3rd step code in powershell.
+
+-->In powershel we will get yes or no so choose YES.
+
+-->After that download node.js in chrome.
+And fire 1st step again in terminal
+
+4.firebase login
+--> If we will get error again fire the command in powershell.
+ fire in powershell --> dart pub global activate flutterfire_cli
+                    --> npm install -g firebase-tools
+                    These both command pass in powershell
+
+---> fire this command in powershell....
+ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+fire command in terminal 
+-->
+firebase login
+
+5.flutterfire configure --project=flutterfirebase-9ecc0
+
+6. Install 3 packages 
+   1.firebase core flutterfire
+   2.firebase cloud flutter
+   3.firebase auth flutter
+   4.firebase store
+
+--> if we could not get file of firebase we again fire one command 
+flutterfire configure --project=flutterfirebase-9ecc0
+ then press Enter and then type "com.example.app"
+ you will get firebase files e.g firebase.ext , myfirebase.iml
+ go to firebase account and click on build
+ Build->authentication(enable email and password)->firebase database
+
+
